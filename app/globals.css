@@ -15,12 +15,18 @@
 }
 
 body {
-background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+  opacity: 1;
 }
-*{
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.p-7::-webkit-scrollbar {
+          display: none;
+}
+
+/* Additional Tailwind styling can go here */

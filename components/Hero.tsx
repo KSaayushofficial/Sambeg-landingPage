@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
 import React from "react";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import Image from "next/image";
 
 const content = [
   {
@@ -45,12 +44,12 @@ export function Hero() {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+          className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto overflow-y-hidden"
         >
           Get To Know Us?
         </motion.h1>
       </HeroHighlight>
-      <div className="p-7">
+      <div className="p-7" style={{ overflowY: "scroll" }}>
         <StickyScroll content={content} />
       </div>
     </div>
